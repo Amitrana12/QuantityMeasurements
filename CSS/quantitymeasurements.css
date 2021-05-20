@@ -127,7 +127,7 @@ body {
 }
 
 .form{
-    width: 79%;
+    width: 50%;
     margin-top: 3%;
     display: flex;
     margin-left: 28%;
@@ -151,47 +151,46 @@ body {
     font-weight: bold;
 }
 @media only screen and (max-width: 600px) {
- .form{
-     width: 40%;
-     display:flex;
-     flex-direction: column;
-     justify-content: center;
- }
- .from{
-     margin-right: 6%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     justify-content: space-between;
-     align-items: center;
- }
- .to{
-     margin-left: 22%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    
-}
-#welcome {
-    text-transform: capitalize;
-    font-size: 33px;
-    background-color: cornflowerblue;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #F5F6FA;
-}
-.choosebody {
-    padding-top: 25px;
-    padding-left: 30%;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-}
+    .form{
+        width: 40%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .from{
+        margin-right: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .to{
+        margin-left: 22%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding-top: 30px;
+       
+   }
+   #welcome {
+       text-transform: capitalize;
+       font-size: 33px;
+       background-color: cornflowerblue;
+       text-align: center;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       padding-top: 15px;
+       padding-bottom: 15px;
+       color: #F5F6FA;
+   }
+   .choosebody {
+       padding-top: 25px;
+       padding-left: 33%;
+       text-transform: uppercase;
+       font-weight: bold;
+   }
+   
+   }
