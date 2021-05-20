@@ -20,11 +20,22 @@ $(document).ready(function () {
 		$("#image2").attr({style: "content:url(../assets/hot\ \(1\).svg)" });
 		$("#image3").attr({style: "content:url(../assets/beaker.svg)" });
 
-	}) 
-    $(".box1").click(length);
+	})
+	$(".box1").click(length);
+	
 
 });
+const selection = (value,select,number)=>{
+	if (value == select) {
+		$("#select1").append(`<option selected> ` + value + `</option>` + '<br>');
+		$("#select").append(`<option> ` + value + `</option>` + '<br>');
+	}
+	else {
+		$("#select").append(`<option>` + value + `</option>` + '<br>');
+		$("#select1").append(`<option>` + value + `</option>` + '<br>');
+	}
 
+};
 
 
 
