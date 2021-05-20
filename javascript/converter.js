@@ -38,7 +38,23 @@ $(document).ready(function () {
 		$("#image2").attr({style: "content:url(../assets/hotcolour.svg" });
 		$("#image3").attr({style: "content:url(../assets/beaker.svg)" });
 	});
-	
+	var volumeoptions = ["Litres", "Millilitres", "Galons"];
+	$(".box3").click(() => {
+		input.value = 1;
+		result.value = 1000;
+		$("#select").empty();
+		$("#select1").empty();
+		$.each(volumeoptions, function (index, value) {
+			selection(value,"Millilitres");
+		});
+		$(".box3").addClass("card3");
+		$(".box1").removeClass("card1");
+		$(".box2").removeClass("card2");
+		$("#image1").attr({style: "content:url(../assets/scalebw.svg)" });
+		$("#image2").attr({style: "content:url(../assets/hot\ \(1\).svg)" });
+		$("#image3").attr({style: "content:url(../assets/beakercolour.svg)" });
+
+	});
 
 });
 const selection = (value,select,number)=>{
