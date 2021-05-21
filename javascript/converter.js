@@ -156,4 +156,15 @@ function myResult() {
 	} else if (inputTypeValue === "micrometer" && resultTypeValue === "mile") {
 		result.value = Number(input.value) * 6.2137e-10;
 	}
+
+    //  TemperatureConverter all Logic 
+	if (inputTypeValue === "Celsius" && resultTypeValue === "Celsius") {
+		result.value = input.value;
+	} else if (inputTypeValue === "Celsius" && resultTypeValue === "Fahrenheit") {
+		result.value = (Number(input.value) * 9 / 5) + 32;
+		;
+	} else if (inputTypeValue === "Celsius" && resultTypeValue === "Kelvin") {
+		result.value = Number(input.value) + 273.15;
+	}
+	
 }
