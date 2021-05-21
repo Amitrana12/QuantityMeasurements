@@ -69,6 +69,8 @@ body {
 
 .box1 img {
     content: url("../assets/scalebw.svg");
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .box1:hover {
@@ -83,6 +85,8 @@ body {
 
 .box2 img {
     content: url("../assets/hot\ \(1\).svg");
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .box2:hover {
@@ -97,6 +101,8 @@ body {
 
 .box3 img {
     content: url("../assets/beaker.svg");
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .box3:hover {
