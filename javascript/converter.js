@@ -100,4 +100,22 @@ function myResult() {
 		result.value = Number(input.value) * 0.000621371;
 	}
 
+
+
+	if (inputTypeValue === "kilometer" && resultTypeValue === "meter") {
+
+		result.value = Number(input.value) * 1000;
+	} else if (inputTypeValue === "kilometer" && resultTypeValue === "centimeter") {
+		result.value = Number(input.value) * 100000;
+	} else if (inputTypeValue === "kilometre" && resultTypeValue === "kilometer") {
+		result.value = input.value
+	} else if (inputTypeValue === "kilometre" && resultTypeValue === "millimeter") {
+		result.value = Number(input.value) * 1000000;
+	} else if (inputTypeValue === "kilometre" && resultTypeValue === "micrometer") {
+		result.value = Number(input.value) * 1000000000;
+	} else if (inputTypeValue === "kilometre" && resultTypeValue === "mile") {
+		result.value = Number(input.value) * 0.621371;
+	}
+
+	
 }
