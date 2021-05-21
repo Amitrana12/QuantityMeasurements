@@ -174,4 +174,11 @@ function myResult() {
 		result.value = (Number(input.value) - 32) * 5 / 9 + 273.15;
 	}
 
+	if (inputTypeValue === "Kelvin" && resultTypeValue === "Celsius") {
+		result.value = Number(input.value) - 273.15;
+	} else if (inputTypeValue === "Kelvin" && resultTypeValue === "Fahrenheit") {
+		result.value = (Number(input.value) - 459.67);
+	} else if (inputTypeValue === "Kelvin" && resultTypeValue === "Kelvin") {
+		result.value = input.value;
+	}
 }
