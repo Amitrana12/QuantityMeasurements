@@ -198,4 +198,12 @@ function myResult() {
 	} else if (inputTypeValue === "Millilitres" && resultTypeValue === "Litres") {
 		result.value = Number(input.value) * 0.001;
 	}
+
+	if (inputTypeValue === "Galons" && resultTypeValue === "Millilitres") {
+		result.value = Number(input.value) * 4546.09;
+	} else if (inputTypeValue === "Galons" && resultTypeValue === "Litres") {
+		result.value = (Number(input.value) * 4.54609);
+	} else if (inputTypeValue === "Galons" && resultTypeValue === "Galons") {
+		result.value = input.value;
+	}
 }
