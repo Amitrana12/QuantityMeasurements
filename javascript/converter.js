@@ -191,5 +191,11 @@ function myResult() {
 		result.value = input.value;
 	}
 
-
+	if (inputTypeValue === "Millilitres" && resultTypeValue === "Millilitres") {
+		result.value = input.value;
+	} else if (inputTypeValue === "Millilitres" && resultTypeValue === "Galons") {
+		result.value = (Number(input.value) * 0.000219969);
+	} else if (inputTypeValue === "Millilitres" && resultTypeValue === "Litres") {
+		result.value = Number(input.value) * 0.001;
+	}
 }
