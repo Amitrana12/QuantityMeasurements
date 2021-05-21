@@ -117,5 +117,20 @@ function myResult() {
 		result.value = Number(input.value) * 0.621371;
 	}
 
+	if (inputTypeValue === "centimeter" && resultTypeValue === "kilometer") {
+		result.value = Number(input.value) * 0.00001;
+	} else if (inputTypeValue === "centimeter" && resultTypeValue === "meter") {
+		result.value = Number(input.value) * 0.01;
+	} else if (inputTypeValue === "centimeter" && resultTypeValue === "centimeter") {
+		result.value = input.value
+	} else if (inputTypeValue === "centimeter" && resultTypeValue === "millimeter") {
+		result.value = Number(input.value) * 10;
+	} else if (inputTypeValue === "centimeter" && resultTypeValue === "micrometer") {
+		result.value = Number(input.value) * 10000;
+	} else if (inputTypeValue === "centimeter" && resultTypeValue === "mile") {
+		result.value = Number(input.value) * 6.2137e-6;
+	}
+
 	
+
 }
