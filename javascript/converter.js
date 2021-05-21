@@ -181,4 +181,15 @@ function myResult() {
 	} else if (inputTypeValue === "Kelvin" && resultTypeValue === "Kelvin") {
 		result.value = input.value;
 	}
+
+    // volume converter logic 
+	if (inputTypeValue === "Litres" && resultTypeValue === "Millilitres") {
+		result.value = Number(input.value) * 1000;
+	} else if (inputTypeValue === "Litres" && resultTypeValue === "Galons") {
+		result.value = (Number(input.value) * 0.219969);
+	} else if (inputTypeValue === "Litres" && resultTypeValue === "Litres") {
+		result.value = input.value;
+	}
+
+
 }
