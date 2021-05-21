@@ -100,8 +100,6 @@ function myResult() {
 		result.value = Number(input.value) * 0.000621371;
 	}
 
-
-
 	if (inputTypeValue === "kilometer" && resultTypeValue === "meter") {
 
 		result.value = Number(input.value) * 1000;
@@ -145,4 +143,17 @@ function myResult() {
 		result.value = Number(input.value) * 6.2137e-7;
 	}
 
+	if (inputTypeValue === "micrometer" && resultTypeValue === "kilometer") {
+		result.value = Number(input.value) * 1e-9;
+	} else if (inputTypeValue === "micrometer" && resultTypeValue === "meter") {
+		result.value = Number(input.value) * 1e-6;
+	} else if (inputTypeValue === "micrometer" && resultTypeValue === "centimeter") {
+		result.value = Number(input.value) * 1e-4;
+	} else if (inputTypeValue === "micrometer" && resultTypeValue === "millimeter") {
+		result.value = Number(input.value) * 0.001;
+	} else if (inputTypeValue === "micrometer" && resultTypeValue === "micrometer") {
+		result.value = input.value;
+	} else if (inputTypeValue === "micrometer" && resultTypeValue === "mile") {
+		result.value = Number(input.value) * 6.2137e-10;
+	}
 }
