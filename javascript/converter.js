@@ -17,8 +17,8 @@ $(document).ready(function () {
 		$(".box2").removeClass("card2");
 		$(".box3").removeClass("card3");
 		$("#image1").attr({style: "content:url(../assets/scale.svg)" });
-		$("#image2").attr({style: "content:url(../assets/hot\ \(1\).svg)" });
-		$("#image3").attr({style: "content:url(../assets/beaker.svg)" });
+		//$("#image2").attr({style: "content:url(../assets/hot\ \(1\).svg)" });
+		//$("#image3").attr({style: "content:url(../assets/beaker.svg)" });
 
 	})
 	$(".box1").click(length);
