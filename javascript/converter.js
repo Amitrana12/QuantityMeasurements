@@ -166,5 +166,12 @@ function myResult() {
 	} else if (inputTypeValue === "Celsius" && resultTypeValue === "Kelvin") {
 		result.value = Number(input.value) + 273.15;
 	}
-	
+	if (inputTypeValue === "Fahrenheit" && resultTypeValue === "Celsius") {
+		result.value = (Number(input.value) - 32) * 5 / 9;
+	} else if (inputTypeValue === "Fahrenheit" && resultTypeValue === "Fahrenheit") {
+		result.value = input.value;
+	} else if (inputTypeValue === "Fahrenheit" && resultTypeValue === "Kelvin") {
+		result.value = (Number(input.value) - 32) * 5 / 9 + 273.15;
+	}
+
 }
