@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    let options = ['Meter', 'Kilometer', 'Mile', 'Centimeter', 'Milimeter', 'Micrometer', 'Foot', 'Inch'];
-    let values = [39.4, 39370, 63360, 0.3937, 0.03937, 0.00003937, 12, 1];
 
     let lengths = ['Meter', 'Kilometer', 'Mile', 'Centimeter', 'Milimeter', 'Micrometer', 'Foot', 'Inch'];
     let lengthValues = [39.4, 39370, 63360, 0.3937, 0.03937, 0.00003937, 12, 1];
